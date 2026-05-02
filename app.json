@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "YipOnline Products",
+    "slug": "yip-product-uploader",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0A0A0A"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.yiponline.productuploader",
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "YipOnline needs access to your photos to add product images.",
+        "NSCameraUsageDescription": "YipOnline needs camera access to take product photos."
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0A0A0A"
+      },
+      "package": "com.yiponline.productuploader",
+      "permissions": [
+        "READ_MEDIA_IMAGES",
+        "READ_EXTERNAL_STORAGE",
+        "CAMERA",
+        "RECEIVE_BOOT_COMPLETED",
+        "VIBRATE"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#FF5C28"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "YipOnline needs access to your photos to add product images."
+        }
+      ],
+      "expo-font"
+    ]
+  }
+}
